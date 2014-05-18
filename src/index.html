@@ -1,0 +1,25 @@
+<html ng-app="dzPhrasing">
+  <head>
+    <title>Phrasing!</title>
+    <link rel="stylesheet" href="css/main.css"/>
+  </head>
+  <body ng-controller="dzPhrasingCtrl">
+    <h1>Phrasing!</h1>
+    <table>
+      <th ng-repeat="heading in headings">{{heading}}</th>
+      <tr ng-repeat="phrase in phrases">
+        <td ng-repeat="part in phrase">{{part}}</td>
+      </tr>
+    </table>
+    <h2>Which Jokes? Deez Jokes.</h2>
+    <table>
+      <th ng-repeat="heading in deezJokesHeadings">{{heading}}</th>
+      <tr ng-repeat="joke in deezJokes">
+        <td ng-repeat="part in joke">{{part}}</td>
+      </tr>
+    </table>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
+    <script src="app.js"></script>
+    <script src="controller.js"></script>
+  <body>
+</html>
